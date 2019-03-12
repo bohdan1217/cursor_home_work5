@@ -130,7 +130,29 @@ function toUppercase(str) {
 }
 console.log('task9');
 console.log(toUppercase('abc')); // 'ABC'
+
+
+
+//new
+function toUppercase2(str) {
+    let upper = "";
+    for( let i = 0; i < str.length; i++){
+        let char = str.charCodeAt(i);
+        if (char >= 97 && char <= 122){
+            upper += String.fromCharCode(char - 32);
+        }
+        else{
+            upper += String.fromCharCode(char);
+        }
+    }
+    return upper;
+}
+
+console.log(toUppercase2('abc')); // 'ABC'
 console.log('****************');
+
+
+
 
 //task10
 //A function which removes duplication of letters in string. The function must be case-insensitive
