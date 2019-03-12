@@ -133,6 +133,7 @@ console.log(toUppercase('abc')); // 'ABC'
 
 
 
+
 //new
 function toUppercase2(str) {
     let upper = "";
